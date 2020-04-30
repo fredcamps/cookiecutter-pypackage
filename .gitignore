@@ -32,7 +32,6 @@ Temporary Items
 
 # Distribution / packaging
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -54,7 +53,8 @@ var/
 *.manifest
 *.spec
 
-# Installer logs
+# logs
+*.log
 pip-log.txt
 pip-delete-this-directory.txt
 
@@ -74,11 +74,13 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-
 # Sphinx documentation
 docs/_build/
+
+# Emacs files
+.dir-locals.el
+.projectile
+\#*\#
 
 # IntelliJ Idea family of suites
 .idea
@@ -90,6 +92,7 @@ docs/_build/
 .idea_modules/
 
 # PyBuilder
+.pybuilder/
 target/
 
 # Cookiecutter
@@ -99,3 +102,77 @@ cookiecutter-pypackage-env/
 
 # IDE settings
 .vscode/
+
+# Ink files
+*~
+
+# Backup Files
+*.bkp
+*.swp
+*.orig
+*_BASE_*
+*_REMOTE_*
+*_LOCAL_*
+
+# Lock
+*.lock
+
+# sqlite
+db.sqlite3
+db.sqlite3-journal
+
+# mypy
+.mypy_cache
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# celerybeat
+celerybeat-schedule
+
+# pid files
+*.pid
+
+# Flask
+instance/
+.webassets-cache
+
+# Sphinx documentation
+docs/_build/
+
+# scrapy
+.scrapy
+
+# SageMath parsed files
+*.sage.py
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Rope project settings
+.ropeproject
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
