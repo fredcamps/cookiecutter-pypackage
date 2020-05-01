@@ -4,12 +4,12 @@ Cookiecutter PyPackage
 
 This project is a fork from the `original cookiecutter-pypackage`_
 
-.. image:: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/shield.svg
+.. image:: https://pyup.io/repos/github/fredcamps/cookiecutter-pypackage/shield.svg
      :target: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/
      :alt: Updates
 
-.. image:: https://travis-ci.org/audreyr/cookiecutter-pypackage.svg?branch=master
-    :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
+.. image:: https://travis-ci.org/fredcamps/cookiecutter-pypackage.svg?branch=master
+    :target: https://travis-ci.org/fredcamps/cookiecutter-pypackage
 
 Cookiecutter_ template for a Python package.
 
