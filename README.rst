@@ -2,6 +2,8 @@
 Cookiecutter PyPackage
 ======================
 
+This project is a fork from the `original cookiecutter-pypackage`
+
 .. image:: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/shield.svg
      :target: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/
      :alt: Updates
@@ -17,7 +19,11 @@ Cookiecutter_ template for a Python package.
 
 Features
 --------
-
+* IDE Features with Python Language Server
+* Static Analysis with mypy, dlint
+* Deadcode detection with flake8-erradicate
+* Auto Imports with importmagic
+* Dependency and environment managment with ``pipenv``
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * Travis-CI_: Ready for Travis Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 3.5, 3.6, 3.7, 3.8
@@ -26,22 +32,16 @@ Features
 * Auto-release to PyPI_ when you push a new tag to master (optional)
 * Command line interface using Click (optional)
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _Cookiecutter: https://github.com/fredcamps/cookiecutter
 
 Build Status
 -------------
 
 Linux:
 
-.. image:: https://img.shields.io/travis/audreyr/cookiecutter-pypackage.svg
-    :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
+.. image:: https://img.shields.io/travis/fredcamps/cookiecutter-pypackage.svg
+    :target: https://travis-ci.org/fredcamps/cookiecutter-pypackage
     :alt: Linux build status on Travis CI
-
-Windows:
-
-.. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
-    :alt: Windows build status on Appveyor
 
 Quickstart
 ----------
@@ -53,7 +53,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/fredcamps/cookiecutter-pypackage.git
 
 Then:
 
@@ -131,6 +131,7 @@ make my own packaging experience better.
 .. _Pipenv: https://pipenv.readthedocs.io/en/latest/
 .. _PyPi: https://pypi.python.org/pypi
 
+.. _`original cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage/
 .. _`Nekroze/cookiecutter-pypackage`: https://github.com/Nekroze/cookiecutter-pypackage
 .. _`tony/cookiecutter-pypackage-pythonic`: https://github.com/tony/cookiecutter-pypackage-pythonic
 .. _`ardydedase/cookiecutter-pypackage`: https://github.com/ardydedase/cookiecutter-pypackage
