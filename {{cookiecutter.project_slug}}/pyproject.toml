@@ -5,7 +5,6 @@ description = "{{cookiecutter.project_short_description}}"
 authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
 
 [tool.poetry.dependencies]
-{{cookiecutter.project_slug}} = { path = "./" }
 pip = ">=20.1.0"
 python = "^3.6"
 
