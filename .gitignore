@@ -114,9 +114,6 @@ cookiecutter-pypackage-env/
 *_REMOTE_*
 *_LOCAL_*
 
-# Lock
-*.lock
-
 # sqlite
 db.sqlite3
 db.sqlite3-journal
