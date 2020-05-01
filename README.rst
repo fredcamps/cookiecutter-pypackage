@@ -2,7 +2,7 @@
 Cookiecutter PyPackage
 ======================
 
-This project is a fork from the `original cookiecutter-pypackage`_
+This project is a fork from the `original cookiecutter-pypackage`_ with some extensions.
 
 .. image:: https://pyup.io/repos/github/fredcamps/cookiecutter-pypackage/shield.svg
      :target: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/
@@ -19,11 +19,12 @@ Cookiecutter_ template for a Python package.
 
 Features
 --------
+* Dockerfile include
 * IDE Features with Python Language Server
 * Static Analysis with mypy, dlint
 * Deadcode detection with flake8-erradicate
 * Auto Imports with importmagic
-* Dependency and environment managment with ``pipenv``
+* Dependency and environment managment with Poetry_
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * Travis-CI_: Ready for Travis Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 3.5, 3.6, 3.7, 3.8
@@ -54,7 +55,7 @@ Then:
 
 * Create a repo and put it there.
 * Add the repo to your Travis-CI_ account.
-* Install the dev requirements into a virtualenv. (``pipenv install --dev``)
+* Install the dev requirements into a virtualenv. (``poetry install``)
 * Register_ your project with PyPI.
 * Run the Travis CLI command `travis encrypt --add deploy.password` to encrypt your PyPI password in Travis config
   and activate automated deployment on PyPI when you push a new tag to master branch.
@@ -121,6 +122,7 @@ make my own packaging experience better.
 .. _bump2version: https://github.com/c4urself/bump2version
 .. _Punch: https://github.com/lgiordani/punch
 .. _Pipenv: https://pipenv.readthedocs.io/en/latest/
+.. _Poetry: https://python-poetry.org/
 .. _PyPi: https://pypi.python.org/pypi
 
 .. _`original cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage/

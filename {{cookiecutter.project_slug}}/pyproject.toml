@@ -1,9 +1,15 @@
-[[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true
+[tool.poetry]
+name = "{{cookiecutter.project_slug}}"
+version = "{{cookiecutter.version}}"
+description = "{{cookiecutter.project_short_description}}"
+authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
 
-[dev-packages]
+[tool.poetry.dependencies]
+{{cookiecutter.project_slug}} = {path = ".", editable = true}
+pip = ">=20.1.0"
+python = ">=3.5"
+
+[tool.poetry.dev-dependencies]
 bump2version = ">=0.5.11"
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 Click = ">=7.0"
@@ -27,5 +33,7 @@ twine = ">=1.14.0"
 watchdog = ">=0.9.0"
 wheel = ">=0.33.6"
 
-[packages]
-{{cookiecutter.project_slug}} = {path = ".", editable = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
