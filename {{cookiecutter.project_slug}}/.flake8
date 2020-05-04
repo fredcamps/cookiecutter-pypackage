@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 100
+exclude = tests/*
+max-complexity = 10
+
+
+[pycodestyle]
+maximum_line_length = 100
+maximum_doc_length = 120
