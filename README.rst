@@ -20,10 +20,6 @@ Cookiecutter_ template for a Python package.
 Features
 --------
 * Dockerfile include
-* IDE Features with Python Language Server
-* Static Analysis with mypy, dlint
-* Deadcode detection with flake8-erradicate
-* Auto Imports with importmagic
 * Dependency and environment managment with Poetry_
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * Travis-CI_: Ready for Travis Continuous Integration testing
