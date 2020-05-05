@@ -19,7 +19,8 @@ Cookiecutter_ template for a Python package.
 
 Features
 --------
-* Dockerfile include
+* Dockerfile included
+* Linters, checkers and code formatters included
 * Dependency and environment managment with Poetry_
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * Travis-CI_: Ready for Travis Continuous Integration testing
