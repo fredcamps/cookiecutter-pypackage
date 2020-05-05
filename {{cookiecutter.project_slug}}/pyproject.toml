@@ -24,6 +24,12 @@ Sphinx = ">=1.8.5"
 tox = ">=3.14.6"
 watchdog = ">=0.9.0"
 whell = ">=0.34.2"
+black = "*"
+importmagic3 = "*"
+monkeytype = "*"
+mypy = "*"
+pylint = "*"
+wemake-python-styleguide = "*"
 
 [build-system]
 requires = ["poetry>=0.12"]
