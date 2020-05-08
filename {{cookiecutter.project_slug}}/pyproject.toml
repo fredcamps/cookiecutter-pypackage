@@ -5,31 +5,31 @@ description = "{{cookiecutter.project_short_description}}"
 authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
 
 [tool.poetry.dependencies]
-pip = ">=20.1.0"
+pip = "^20.1.0"
 python = "^3.6"
 
 [tool.poetry.dev-dependencies]
-bump2version = ">=0.5.11"
+bump2version = "^0.5.11"
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
-Click = ">=7.0"
+Click = "^7.0"
 {% endif %}
-pip = ">=20.1.0"
-py-make = ">=0.1.1"
+pip = "^20.1.0"
+py-make = "^0.1.1"
 {% if cookiecutter.use_pytest == 'y' -%}
-pytest = ">=5.4.1"
-pytest-cov = ">=2.8.1"
-pytest-mock = ">=3.1.0"
+pytest = "^5.4.1"
+pytest-cov = "^2.8.1"
+pytest-mock = "^3.1.0"
 {% endif %}
-Sphinx = ">=1.8.5"
-tox = ">=3.14.6"
-watchdog = ">=0.9.0"
-whell = ">=0.34.2"
-black = ">=19.10b0"
-importmagic3 = ">=0.2.0"
-monkeytype = ">=20.4.2"
-mypy = ">=0.770"
-pylint = ">=2.5.2"
-wemake-python-styleguide = ">=0.14.0"
+Sphinx = "^1.8.5"
+tox = "^3.14.6"
+watchdog = "^0.9.0"
+wheel = "^0.34.2"
+black = "^19.10b0"
+importmagic3 = "^0.2.0"
+monkeytype = "^20.4.2"
+mypy = "^0.770"
+pylint = "^2.5.2"
+wemake-python-styleguide = "^0.14.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
