@@ -1,9 +1,22 @@
 [flake8]
-max-line-length = 100
-exclude = tests/*
+## VERBOSITY ##
+verbose = 1
+quiet = 0
+
+## PARALLEL ##
+jobs = auto
+
+## FORMAT ##
+show-source = True
+count = True
+statistics = True
+
+## FILE PATTERNS ##
+exclude = .git, __pycache__
+filename = *.py
+
+## OPTIONS ##
+disable-noqa = False
 max-complexity = 10
-
-
-[pycodestyle]
-maximum_line_length = 100
-maximum_doc_length = 120
+max-line-length = 100
+ignore = ANN101, D200, D401, WPS306
