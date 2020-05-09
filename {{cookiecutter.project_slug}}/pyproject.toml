@@ -11,29 +11,41 @@ python = "^3.6"
 
 
 [tool.poetry.dev-dependencies]
+black = "^19.10b0"
 bump2version = "^0.5.11"
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
-Click = "^7.0"
+click = "^7.0"
 {% endif %}
+cohesion = "^1.0.0"
+dlint = "^0.10.3"
+epc = "^0.0.5"
+flake8-aaa = "^0.9.0"
+flake8-annotations = "^2.1.0"
+flake8-cognitive-complexity = "^0.0.2"
+flake8-executable = "^2.0.3"
+flake8-expression-complexity = "^0.0.7"
+flake8-functions = "^0.0.4"
+flake8-logging-format = "^0.6.0"
+flake8-mock = "^0.3"
+flake8-pie = "^0.5.0"
+flake8-variables-names = "^0.0.3"
+importmagic3 = "^0.2.0"
+ipython = "^7.14.0"
+monkeytype = "^20.4.2"
+mypy = "^0.770"
 pip = "^20.1.0"
 py-make = "^0.1.1"
+pylint = "^2.5.2"
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest = "^5.4.1"
 pytest-cov = "^2.8.1"
 pytest-mock = "^3.1.0"
 {% endif %}
-Sphinx = "^1.8.5"
+sphinx = "^1.8.5"
 tox = "^3.14.6"
 watchdog = "^0.9.0"
-wheel = "^0.34.2"
-black = "^19.10b0"
-epc = "^0.0.5"
-importmagic3 = "^0.2.0"
-monkeytype = "^20.4.2"
-mypy = "^0.770"
-pylint = "^2.5.2"
 wemake-python-styleguide = "^0.14.0"
-
+wheel = "^0.34.2"
 
 [tool.black]
 line-length = 100
