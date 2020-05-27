@@ -1,8 +1,32 @@
+{%- set license_classifiers = {
+    'MIT license': 'License :: OSI Approved :: MIT License',
+    'BSD license': 'License :: OSI Approved :: BSD License',
+    'ISC license': 'License :: OSI Approved :: ISC License (ISCL)',
+    'Apache Software License 2.0': 'License :: OSI Approved :: Apache Software License',
+    'GNU General Public License v3': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
+} %}
 [tool.poetry]
 name = "{{cookiecutter.project_slug}}"
 version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.project_short_description}}"
 authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+classifiers = [
+  'Development Status :: 2 - Pre-Alpha',
+  'Intended Audience :: Developers',
+{%- if cookiecutter.open_source_license in license_classifiers %}
+  '{{ license_classifiers[cookiecutter.open_source_license] }}',
+{%- endif %}
+  'Natural Language :: English',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.6',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+]
+packages = [
+    { include = "{{ cookiecutter.project_slug }}" },
+]
+keywords='{{ cookiecutter.project_slug }}'
+readme='README.rst'
 
 
 [tool.poetry.dependencies]
@@ -19,8 +43,6 @@ click = "^7.0"
 cohesion = "^1.0.0"
 dlint = "^0.10.3"
 epc = "^0.0.5"
-flake8-aaa = "^0.9.0"
-flake8-annotations = "^2.1.0"
 flake8-cognitive-complexity = "^0.0.2"
 flake8-executable = "^2.0.3"
 flake8-expression-complexity = "^0.0.7"
@@ -28,6 +50,7 @@ flake8-functions = "^0.0.4"
 flake8-logging-format = "^0.6.0"
 flake8-mock = "^0.3"
 flake8-pie = "^0.5.0"
+flake8-pytest-style = "^1.1.1"
 flake8-variables-names = "^0.0.3"
 importmagic3 = "^0.2.0"
 ipython = "^7.14.0"
@@ -46,6 +69,7 @@ tox = "^3.14.6"
 watchdog = "^0.9.0"
 wemake-python-styleguide = "^0.14.0"
 wheel = "^0.34.2"
+
 
 [tool.black]
 line-length = 100
