@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "cookiecutter-pypackage"
 version = "0.1.0"
-description = ""
+description = "Cookiecutter template for pypackage using poetry as build tool"
 authors = ["Fred Campos <fred.tecnologia@gmail.com>"]
 
 [tool.poetry.dependencies]
