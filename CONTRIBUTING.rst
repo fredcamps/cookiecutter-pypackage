@@ -73,20 +73,12 @@ development. Please note this documentation assumes you already have
 
 ::
 
-3. Assuming you have virtualenv installed (If you have Python3.5 this should
-   already be there), you can create a new environment for your local
+3. Assuming you have poetry installed, you can create a new environment for your local
    development by typing:
 
    .. code-block:: bash
 
-        $ virtualenv cookiecutter-pypackage-env
-        $ source cookiecutter-pypackage-env/bin/activate
-
-   This should change the shell to look something like:
-
-   .. code-block:: bash
-
-        (cookiecutter-pypackage-env) $
+        $ poetry install
 
 ::
 
@@ -106,7 +98,7 @@ development. Please note this documentation assumes you already have
 
    .. code-block:: bash
 
-        $ flake8 ./tests
+        $ poetry run flake8 ./tests
 
 ::
 
@@ -116,8 +108,7 @@ development. Please note this documentation assumes you already have
 
    .. code-block:: bash
 
-        $ pip install -rrequirements_dev.txt
-        $ pytest ./tests
+        $ poetry run pytest
 
    If you get any errors while installing cryptography package (something like
    `#include <openssl/aes.h>`). Please update your pip version and try again:
@@ -134,10 +125,10 @@ development. Please note this documentation assumes you already have
 
    .. code-block:: bash
 
-        $ tox
+        $ poetry run tox
 
-   If you are missing flake8, pytest and/or tox, just `pip install` them into
-   your virtualenv.
+   If you are missing flake8, pytest and/or tox, just `poetry add`
+   on your env.
 
 ::
 
@@ -204,7 +195,7 @@ To write and run your new test, follow these steps:
 
    .. code-block:: bash
 
-        $ pytest ./tests
+        $ poetry run pytest
 
 ::
 
@@ -213,7 +204,7 @@ To write and run your new test, follow these steps:
 
    .. code-block:: bash
 
-        $ tox
+        $ poetry run tox
 
 ::
 

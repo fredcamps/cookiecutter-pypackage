@@ -64,11 +64,10 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.project_slug }}` for 
 
     $ git clone git@github.com:your_name_here/{{ cookiecutter.project_slug }}.git
 
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. Install your local copy. Assuming you have poetry installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv {{ cookiecutter.project_slug }}
     $ cd {{ cookiecutter.project_slug }}/
-    $ python setup.py develop
+    $ poetry install
 
 4. Create a branch for local development::
 
@@ -79,11 +78,11 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.project_slug }}` for 
 5. When you're done making changes, check that your changes pass flake8 and the
    tests, including testing other Python versions with tox::
 
-    $ flake8 {{ cookiecutter.project_slug }} tests
-    $ python setup.py test or pytest
-    $ tox
+    $ poetry run flake8 {{ cookiecutter.project_slug }} tests
+    $ poetry run python -m unittest discover # or pytest
+    $ poetry run tox
 
-   To get flake8 and tox, just pip install them into your virtualenv.
+   To get flake8 and tox, just pip install them into your env.
 
 6. Commit your changes and push your branch to GitHub::
 
