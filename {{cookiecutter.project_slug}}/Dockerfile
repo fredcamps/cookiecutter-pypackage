@@ -10,6 +10,6 @@ WORKDIR /app
 
 COPY pyproject.toml /app
 
-RUN poetry install --dev
+RUN poetry install
 
 COPY . /app
