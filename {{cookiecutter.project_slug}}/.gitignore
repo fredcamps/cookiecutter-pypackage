@@ -78,6 +78,7 @@ coverage.xml
 docs/_build/
 
 # Emacs files
+flycheck_*.*
 .dir-locals.el
 .projectile
 \#*\#
